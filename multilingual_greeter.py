@@ -14,13 +14,16 @@ def language_input():
     print("2:Kannada")
     print("3:Hindi")
     language = input("Please select number 1, 2,3 for diff langauages ")
-    print (language)
-    if language == 1:
-        print("You have choosen English")
-    elif language == 2:
-        print("You have choosen Kannada")
-    else:
-        print ("you have choosen Hindi")
-    greet(user_input())
 
+    if language == '1':
+        print("You have choosen English")
+        greet(user_input())
+    elif language == '2':
+        print("Neevu kannada bhase aayke madidira ")
+        kannada= input("Nimma hesaru type maadi")
+        print("Namaste "+kannada )
+    else:
+        print ("Aap hindi bhashe select kiya hai!")
+        hindi=input("Aap naam type kijiye")
+        print(f"Namaste {hindi}")
 language_input()
